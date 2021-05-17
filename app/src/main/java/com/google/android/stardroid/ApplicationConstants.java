@@ -21,7 +21,7 @@ import com.google.android.stardroid.units.Vector3;
  */
 public class ApplicationConstants {
 
-  public static final String APP_NAME = "Stardroid";
+  public static final String APP_NAME = "StarView";
   /** Default value for 'south' in phone coords when the app starts */
   public static final Vector3 INITIAL_SOUTH = new Vector3(0, -1, 0);
   /** Default value for 'down' in phone coords when the app starts */
