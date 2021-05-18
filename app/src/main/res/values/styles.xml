@@ -3,6 +3,17 @@
     <style name = "AppTheme" parent="@android:style/Theme.Holo">
     </style>
 
+    <style name="CustomTheme" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/app_grey</item>
+        <item name="android:statusBarColor">@color/app_grey</item>
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
+
+    <style name="splashScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/starviewimagebig</item>
+        <item name="android:statusBarColor">@color/black_overlay</item>
+    </style>
+
     <style name="FullscreenTheme" parent="AppTheme">
         <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
         <item name="android:windowActionBarOverlay">true</item>

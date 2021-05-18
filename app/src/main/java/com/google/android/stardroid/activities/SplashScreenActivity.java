@@ -143,7 +143,8 @@ public class SplashScreenActivity extends InjectableActivity
     boolean whatsNewSeen = (sharedPreferences.getLong(
         ApplicationConstants.READ_WHATS_NEW_PREF_VERSION, -1) == app.getVersion());
     if (whatsNewSeen) {
-      launchSkyMap();
+      launchMainScreen();
+//      launchSkyMap();
     } else {
       whatsNewDialogFragment.show(fragmentManager, "Whats New Dialog");
     }
@@ -155,7 +156,17 @@ public class SplashScreenActivity extends InjectableActivity
     SharedPreferences.Editor editor = sharedPreferences.edit();
     editor.putLong(ApplicationConstants.READ_WHATS_NEW_PREF_VERSION, app.getVersion());
     editor.commit();
-    launchSkyMap();
+    launchMainScreen();
+//    launchSkyMap();
+  }
+
+  // Lauch MainActivity screen
+  private void launchMainScreen()
+  {
+    Intent intent = new Intent(SplashScreenActivity.this, MainActivity.class);
+    cc.check();
+    startActivity(intent);
+    finish();
   }
 
   private void launchSkyMap() {

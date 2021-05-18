@@ -198,6 +198,7 @@ public class DynamicStarMapActivity extends InjectableActivity
   public void onCreate(Bundle icicle) {
     Log.d(TAG, "onCreate at " + System.currentTimeMillis());
     super.onCreate(icicle);
+    setTheme(R.style.AppTheme);
 
     daggerComponent = DaggerDynamicStarMapComponent.builder()
         .applicationComponent(getApplicationComponent())

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/StarMapMenuItem"
+        android:title="StarMap"
+        android:icon="@drawable/ic_star_map_icon"
+        />
+    <item
+        android:id="@+id/WebsiteMenuItem"
+        android:title="Website"
+        android:icon="@drawable/ic_website_icon"
+        />
+    <item
+        android:id="@+id/SourceCodeMenuItem"
+        android:title="Source Code"
+        android:icon="@drawable/ic_source_icon"
+        />
+</menu>
