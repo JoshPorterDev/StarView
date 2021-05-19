@@ -26,7 +26,7 @@ public class thirdFragment extends Fragment
         view = inflater.inflate(R.layout.fragment_third, container, false);
 
         webView = view.findViewById(R.id.webView2);
-        webView.loadUrl("https://github.com/JoshPorterDev/stardroid/tree/master");
+        webView.loadUrl("https://github.com/JoshPorterDev/starview/tree/master");
 
         return view;
     }

@@ -26,7 +26,7 @@ public class secondFragment extends Fragment
         view =  inflater.inflate(R.layout.fragment_second, container, false);
 
         webView = view.findViewById(R.id.webView1);
-        webView.loadUrl("https://joshporterdev.github.io/stardroid/");
+        webView.loadUrl("https://joshporterdev.github.io/StarView/");
 
         return view;
     }
